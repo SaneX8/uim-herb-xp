@@ -24,7 +24,7 @@ import java.util.Map;
 
 
 @PluginDescriptor(name = "UIM Herb XP")
-public class ExamplePlugin extends Plugin
+public class UimHerbXpPlugin extends Plugin
 {
 
 
