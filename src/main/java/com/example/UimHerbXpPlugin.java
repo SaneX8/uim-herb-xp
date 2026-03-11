@@ -55,7 +55,7 @@ protected void startUp() throws Exception
     );
 
     BufferedImage icon = ImageIO.read(
-        getClass().getResourceAsStream("/com/example/icon.png") //pic 
+        getClass().getResourceAsStream("/com/example/icon.png") //
 );
 
     navButton = NavigationButton.builder()
