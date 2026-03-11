@@ -5,6 +5,7 @@ import net.runelite.api.Client;
 import net.runelite.api.InventoryID;
 import net.runelite.api.Item;
 import net.runelite.api.ItemContainer;
+import net.runelite.api.widgets.ComponentID;
 import net.runelite.api.widgets.Widget;
 import net.runelite.api.widgets.WidgetInfo;
 import net.runelite.client.callback.ClientThread;
@@ -13,13 +14,13 @@ import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.client.ui.ClientToolbar;
 import net.runelite.client.ui.NavigationButton;
-
+import net.runelite.api.widgets.ComponentID;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.Map;
-
+import net.runelite.api.widgets.InterfaceID;
 
 
 
@@ -85,7 +86,7 @@ private void scan()
         }
     }
 
-    Widget bag = client.getWidget(WidgetInfo.LOOTING_BAG_CONTAINER);
+    Widget bag = client.getWidget(InterfaceID.LOOTING_BAG, 5);
 
     if(bag != null)
     {
